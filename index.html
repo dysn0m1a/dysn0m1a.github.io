@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Metamorphosis - Franz Kafka | Analysis & Overview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            background-color: #171717;
+            color: #d4d4d4;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .accent-text { color: #f59e0b; }
+        .accent-bg { background-color: #f59e0b; }
+        .secondary-bg { background-color: #262626; }
+        .border-color { border-color: #404040; }
+        .placeholder-bg { background-color: #525252; }
+        .placeholder-border { border-color: #737373; }
+        .placeholder-text { color: #a3a3a3; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            opacity: 0;
+            animation: fadeInUp 0.7s ease-out forwards;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #262626;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f59e0b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d97706;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after, .nav-link:focus::after {
+            width: 100%;
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #fcd34d;
+        }
+
+        .content-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .content-card:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(245, 158, 11, 0.2);
+        }
+        
+        .section-title-icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.75rem;
+            color: #f59e0b;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <nav class="sticky top-0 z-50 bg-neutral-900/80 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#hero" class="text-2xl font-bold accent-text hover:text-amber-400 transition-colors duration-300">The Metamorphosis</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#basic-info" class="nav-link text-neutral-300">Essential Overview</a>
+                    <a href="#introduction" class="nav-link text-neutral-300">Introduction</a>
+                    <a href="#plot" class="nav-link text-neutral-300">Plot</a>
+                    <a href="#characters" class="nav-link text-neutral-300">Characters</a>
+                    <a href="#themes" class="nav-link text-neutral-300">Themes</a>
+                    <a href="#symbols" class="nav-link text-neutral-300">Symbols</a>
+                    <a href="#quotes" class="nav-link text-neutral-300">Quotes</a>
+                    <a href="#recommendation" class="nav-link text-neutral-300">Recommendation</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-neutral-300 hover:accent-text focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden animate-fadeInUp" style="animation-delay: 0.1s;">
+            <div class="absolute inset-0 placeholder-bg opacity-30 overflow-hidden">
+                 <img src="background.jpg" alt="The Metamorphosis themed background" class="w-full h-full object-cover">
+            </div>
+            <div class="relative z-10 text-center p-8 bg-neutral-900/70 backdrop-blur-sm rounded-lg shadow-2xl max-w-3xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold accent-text mb-6">The Metamorphosis</h1>
+                <p class="text-xl md:text-2xl text-neutral-200 italic mb-8">"As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect."</p>
+                <p class="text-lg text-neutral-300">Explore Franz Kafka's timeless novella of alienation, absurdity, and the human condition.</p>
+            </div>
+        </section>
+
+        <section id="basic-info" class="py-16 md:py-24 secondary-bg animate-fadeInUp" style="animation-delay: 0.2s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold accent-text mb-12 text-center">Essential Overview</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                    <div class="space-y-6 content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl h-full">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-amber-400 mb-2">Author:</h3>
+                            <p class="text-lg">Franz Kafka</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-amber-400 mb-2">Title:</h3>
+                            <p class="text-lg">Die Verwandlung (The Metamorphosis)</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-amber-400 mb-2">Genre:</h3>
+                            <p class="text-lg">Novella; Absurdist Fiction, Modernism, Existentialism</p>
+                        </div>
+                         <div>
+                            <h3 class="text-2xl font-semibold text-amber-400 mb-2">Published:</h3>
+                            <p class="text-lg">1915</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6 content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl h-full">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">General Synopsis (Spoiler-Free)</h3>
+                        <p class="text-lg leading-relaxed">Gregor Samsa, a diligent traveling salesman and devoted son, awakens one morning to discover he has inexplicably transformed into a monstrous insect. The novella chronicles Gregor's struggle to adapt to his new form and the profound impact his metamorphosis has on his family, his work, and his sense of self. It's a poignant exploration of isolation, guilt, and the often-absurd nature of existence.</p>
+                    </div>
+                </div>
+                <div class="mt-12 content-card bg-neutral-900 border border-color rounded-lg p-8 shadow-xl">
+                    <h3 class="text-3xl font-semibold text-amber-400 mb-6 text-center">Rating & Reception</h3>
+                    <div class="text-center mb-6">
+                        <p class="text-2xl accent-text font-bold">Our Rating: 5/5 Unsettling Vermin</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-amber-400 mb-2">Fictional Testimonial:</h4>
+                            <p class="italic text-neutral-400">"A haunting journey into the bizarre that stays with you long after the last page. Kafka masterfully turns a strange premise into a deeply human story. It made me question everything." - A Jason Nguyen</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-amber-400 mb-2">Critical Acclaim:</h4>
+                            <p>Widely regarded as a seminal work of 20th-century literature, "The Metamorphosis" is praised for its innovative narrative, profound symbolism, and exploration of complex psychological and philosophical themes. Critics highlight its influence on existentialist thought and its enduring relevance in discussing alienation in modern society.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="introduction" class="py-16 md:py-24 animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center mb-12">
+                    <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m0 0a8.485 8.485 0 0011.07 2.066 8.477 8.477 0 00-11.07-2.066zM12 6.253c-3.866 0-7 3.134-7 7s3.134 7 7 7"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">Diving Deeper: Introduction</h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.35s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Franz Kafka: A Brief Biography</h3>
+                        <p class="text-lg leading-relaxed mb-3">Born in Prague (then Austria-Hungary) in 1883 to a middle-class Jewish family, Kafka's life was marked by complex relationships, particularly with his domineering father. He studied law and worked at an insurance company, a job he resented. His diaries and letters reveal a man plagued by self-doubt, anxiety, and feelings of isolation. He published little during his lifetime, instructing his friend Max Brod to burn his remaining manuscripts upon his death – a request Brod famously ignored, bringing works like "The Trial," "The Castle," and "Amerika" to posthumous fame. Kafka died of tuberculosis in 1924.</p>
+                    </div>
+
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.4s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Historical Context</h3>
+                        <p class="text-lg leading-relaxed">Kafka lived during a period of immense social and political turmoil in Europe. The Austro-Hungarian Empire was grappling with rising nationalism, leading to tensions that culminated in World War I (1914-1918). The war brought unprecedented destruction and societal upheaval. Though Kafka did not fight (due to his job and later, illness), the anxieties of this era, the sense of crumbling empires, and the dawn of modernity deeply permeate his work, often manifesting as themes of bureaucracy, alienation, and powerlessness.</p>
+                    </div>
+
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.45s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Related Literary Works</h3>
+                        <p class="text-lg leading-relaxed">Kafka's work is strongly associated with Existentialism, a philosophical movement emphasizing individual freedom, responsibility, and the search for meaning in an apparently meaningless universe. His themes of guilt, absurdity, and bureaucratic oppression resonate with Fyodor Dostoevsky's "Crime and Punishment." Later existentialists like Jean-Paul Sartre ("Nausea") and Albert Camus ("The Stranger"), acknowledged Kafka's profound influence on their own explorations of the human condition.</p>
+                    </div>
+                </div>
+
+                <div class="mt-10 content-card secondary-bg border border-color rounded-lg p-8 shadow-xl animate-fadeInUp" style="animation-delay: 0.5s;">
+                     <h3 class="text-3xl font-semibold text-amber-400 mb-6 text-center">Key Facts & Curiosities</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <ul class="space-y-3 text-lg">
+                                <li><strong>Full Title:</strong> Die Verwandlung (The Metamorphosis)</li>
+                                <li><strong>Written:</strong> Over three weeks in 1912, in Prague.</li>
+                                <li><strong>Published:</strong> 1915</li>
+                                <li><strong>Literary Period:</strong> Modernism</li>
+                                <li><strong>Genre:</strong> Novella, Absurdist Fiction, Existentialism</li>
+                                <li><strong>Setting:</strong> An unnamed European city, primarily the Samsa family apartment.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-3 text-lg">
+                                <li><strong>Climax:</strong> Gregor emerges during Grete's violin concert for the boarders.</li>
+                                <li><strong>Antagonist(s):</strong> Arguably Gregor's own transformed body and personality, as well as societal pressures and his family's reactions.</li>
+                                <li><strong>Point of View:</strong> Third-person limited, primarily from Gregor's perspective.</li>
+                                <li class="mt-4 pt-3 border-t border-neutral-700">
+                                    <strong class="text-amber-400">Extra Credit - Cockroach or Not?</strong> Kafka used the German word "Ungeziefer," which translates to "vermin" or "unclean animal not fit for sacrifice." While descriptions (many small legs, hard shell, antennae) suggest a cockroach-like creature, Kafka deliberately avoided specifying the exact type of insect, adding to the story's unsettling ambiguity.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plot" class="py-16 md:py-24 secondary-bg animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center mb-12">
+                    <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">The Unraveling: Plot Summary</h2>
+                </div>
+                <div class="content-card bg-neutral-900 border border-color rounded-lg p-8 shadow-xl space-y-4 text-lg leading-relaxed">
+                    <p>Gregor Samsa, a traveling salesman, awakes to find himself transformed into a giant insect. Initially concerned about missing work and the implications for his family (whom he supports), he struggles to adapt to his new body. His family—mother, father, and sister Grete—are horrified. The chief clerk from his firm arrives, and Gregor's attempts to communicate his predicament are futile, as his voice is no longer human. He manages to open his door, causing panic and his forceful return to his room, injuring himself in the process.</p>
+                    <p>Grete initially cares for Gregor, bringing him food (he prefers rotten scraps) and cleaning his room. The family's finances suffer, forcing them all to find work. Gregor overhears their conversations, feeling guilt and alienation. As months pass, Grete's care wanes, and the family's patience wears thin. An attempt by Grete and his mother to remove furniture from his room to give him more space to crawl leads to Gregor protectively clinging to a framed picture, deeply upsetting his mother. His father, misunderstanding the situation, attacks Gregor with apples, one of which lodges in his back, causing a severe injury.</p>
+                    <p>The family takes in three lodgers for income, further marginalizing Gregor. One evening, Grete plays the violin for the lodgers. Drawn by the music, Gregor crawls out of his room. The lodgers are disgusted, and Grete, in despair, declares that "this creature" is not Gregor and they must get rid of "it." Gregor, weak and heartbroken, returns to his room and dies. The charwoman discovers his body the next morning. Relieved, the Samsa family takes a day off, travels to the countryside, and discusses their optimistic plans for the future, noting Grete's maturation and prospects for marriage.</p>
+                    <div class="mt-6 pt-6 border-t border-neutral-700">
+                        <div class="border-2 placeholder-border rounded-lg overflow-hidden">
+                             <img src="meme.jpg" alt="Metamorphosis Meme - Gregor realizing he doesn't have to support his family" class="block w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="characters" class="py-16 md:py-24 animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex items-center mb-12">
+                     <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">The Cast of Characters</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.35s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Gregor Samsa</h3>
+                        <p class="text-lg">The protagonist, a traveling salesman who transforms into a giant insect. Initially devoted to his family, his metamorphosis forces him and his family to confront issues of identity, responsibility, and alienation. His personality gradually shifts as his physical form changes.</p>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.4s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Grete Samsa</h3>
+                        <p class="text-lg">Gregor's younger sister. Initially sympathetic and caring towards Gregor post-transformation, she becomes his primary caregiver. However, the burden and disgust eventually overwhelm her, and she is the first to insist they must get rid of him.</p>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.45s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Mr. Samsa (Father)</h3>
+                        <p class="text-lg">Gregor's father. Before the metamorphosis, he is retired and somewhat lethargic. Gregor's condition forces him back to work. He often reacts to Gregor with hostility and disgust, most notably when he injures Gregor with apples.</p>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.5s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Mrs. Samsa (Mother)</h3>
+                        <p class="text-lg">Gregor's mother. She is frail and suffers from asthma. Torn between maternal love and revulsion at Gregor's new form, she often faints or becomes distressed in his presence. She wants to help but is physically and emotionally overwhelmed.</p>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.55s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">The Lodgers</h3>
+                        <p class="text-lg">Three men who rent a room in the Samsas' apartment. They are fastidious and demanding, representing societal judgment. Gregor's appearance before them precipitates the final crisis.</p>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.6s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">The Charwoman</h3>
+                        <p class="text-lg">An elderly cleaning lady hired after the family's finances decline. She is the least disgusted by Gregor, treating him with a crude, matter-of-fact curiosity. She discovers and disposes of his body.</p>
+                    </div>
+                </div>
+                 <div class="mt-8 content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.65s;">
+                    <h3 class="text-2xl font-semibold text-amber-400 mb-3">Minor Characters</h3>
+                    <ul class="list-disc list-inside space-y-1 text-lg">
+                        <li><strong>Chief Clerk:</strong> Gregor's supervisor, who represents the impersonal and demanding nature of Gregor's work life.</li>
+                        <li><strong>Servant Girl & Cook:</strong> Household staff who leave after Gregor's transformation, highlighting the family's declining social and financial status.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="themes" class="py-16 md:py-24 secondary-bg animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex items-center mb-12">
+                    <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10em7 15 6.343 7.343a7.965 7.965 0 015.657-2.343z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.001 12m0 0a3 3 0 00-2.122 5.121z"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">Underlying Themes</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.35s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Mind vs. Body</h3>
+                        <p class="text-lg">Gregor's human mind trapped in an insect's body highlights the disconnect and eventual fusion between consciousness and physical form. The story explores how physical reality can overpower reason and identity.</p>
+                    </div>
+                    <div class="content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.4s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Family Dynamics & Duty</h3>
+                        <p class="text-lg">The novella scrutinizes familial obligations and the strain Gregor's transformation places on these bonds. Duty shifts from Gregor supporting his family to them caring for him, revealing the fragility and conditionality of their love.</p>
+                    </div>
+                    <div class="content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.45s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Alienation & Isolation</h3>
+                        <p class="text-lg">Gregor's physical change leads to profound social and emotional isolation. He becomes an outcast within his own home, unable to communicate or connect, reflecting broader modernist concerns about alienation in society.</p>
+                    </div>
+                    <div class="content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.5s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Money & Economic Pressure</h3>
+                        <p class="text-lg">Financial concerns are a constant undercurrent. Gregor's inability to work creates a crisis, revealing how economic utility can define an individual's worth within the family and society.</p>
+                    </div>
+                    <div class="content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.55s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Sympathy, Dependence & Responsibility</h3>
+                        <p class="text-lg">The story charts the erosion of sympathy for Gregor as his dependence becomes a burden. It questions the limits of responsibility and whether human connection can survive extreme adversity and revulsion.</p>
+                    </div>
+                     <div class="content-card bg-neutral-900 border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.6s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Absurdity of Life</h3>
+                        <p class="text-lg">Gregor's inexplicable transformation underscores the inherent absurdity Kafka perceived in human existence. Characters grapple with an irrational situation, highlighting the futility of finding logical explanations for life's bizarre turns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="symbols" class="py-16 md:py-24 animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex items-center mb-12">
+                    <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">Symbolic Meanings</h2>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.35s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">The Print of the Lady in the Muff</h3>
+                        <p class="text-lg">A picture Gregor framed before his transformation. It represents his last vestiges of humanity, his connection to beauty, and perhaps a yearning for intimacy. His desperate attempt to save it signifies his struggle to hold onto his former self.</p>
+                        <div class="mt-4 h-40 placeholder-bg border-2 placeholder-border rounded-lg overflow-hidden">
+                           <img src="lady.jpg" alt="The Print of the Lady in the Muff" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.4s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">The Father's Uniform</h3>
+                        <p class="text-lg">Initially a symbol of the father's renewed dignity and authority when he returns to work. Over time, as he never removes it, it becomes stained and oppressive, symbolizing his exhaustion, rigidity, and the burdensome nature of his new responsibilities.</p>
+                         <div class="mt-4 h-40 placeholder-bg border-2 placeholder-border rounded-lg overflow-hidden">
+                            <img src="uniform.jpg" alt="The Father's Uniform" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                    <div class="content-card secondary-bg border border-color rounded-lg p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.45s;">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-3">Grete's Violin</h3>
+                        <p class="text-lg">Represents art, beauty, and human connection. Gregor's profound reaction to Grete's playing is a key moment of his enduring humanity. The violin also precipitates the final crisis when Gregor's appearance during the concert horrifies the lodgers, leading to the family's decision to abandon him.</p>
+                         <div class="mt-4 h-40 placeholder-bg border-2 placeholder-border rounded-lg overflow-hidden">
+                            <img src="violin.jpg" alt="Grete playing violin with Gregor as an insect" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quotes" class="py-16 md:py-24 secondary-bg animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex items-center mb-12">
+                    <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">Iconic Quotes</h2>
+                </div>
+                <div class="space-y-8">
+                    <blockquote class="content-card bg-neutral-900 border-l-4 border-amber-500 p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.35s;">
+                        <p class="text-xl italic text-neutral-200">"As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a gigantic insect."</p>
+                        <footer class="mt-2 text-sm text-neutral-400">- Opening line, setting the stage for the absurd and tragic events.</footer>
+                    </blockquote>
+                    <blockquote class="content-card bg-neutral-900 border-l-4 border-amber-500 p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.4s;">
+                        <p class="text-xl italic text-neutral-200">"What a quiet life our family has been leading."</p>
+                        <footer class="mt-2 text-sm text-neutral-400">- Gregor, reflecting on the past before his transformation, highlighting the comfort he provided and the irony of its disruption.</footer>
+                    </blockquote>
+                    <blockquote class="content-card bg-neutral-900 border-l-4 border-amber-500 p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.45s;">
+                        <p class="text-xl italic text-neutral-200">"Was he an animal, that music had such an effect on him?"</p>
+                        <footer class="mt-2 text-sm text-neutral-400">- Gregor's thought as he is moved by Grete's violin, questioning his own nature and humanity.</footer>
+                    </blockquote>
+                    <blockquote class="content-card bg-neutral-900 border-l-4 border-amber-500 p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.5s;">
+                        <p class="text-xl italic text-neutral-200">"We must try to get rid of it. We've tried to look after it and to put up with it as far as is humanly possible, and I don't think anyone could reproach us in the slightest."</p>
+                        <footer class="mt-2 text-sm text-neutral-400">- Grete, articulating the family's decision to abandon Gregor.</footer>
+                    </blockquote>
+                     <blockquote class="content-card bg-neutral-900 border-l-4 border-amber-500 p-6 shadow-xl animate-fadeInUp" style="animation-delay: 0.55s;">
+                        <p class="text-xl italic text-neutral-200">"He thought of his family with tenderness and love."</p>
+                        <footer class="mt-2 text-sm text-neutral-400">- Gregor's final thoughts before his death, underscoring his enduring, albeit unreciprocated, affection.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendation" class="py-16 md:py-24 animate-fadeInUp" style="animation-delay: 0.3s;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                 <div class="flex items-center mb-12">
+                    <svg class="section-title-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                    <h2 class="text-4xl font-bold accent-text">Who Should Read This?</h2>
+                </div>
+                <div class="content-card secondary-bg border border-color rounded-lg p-8 shadow-xl">
+                    <p class="text-lg leading-relaxed mb-6">"The Metamorphosis" is a profound and unsettling work that resonates with a wide range of readers. It is particularly recommended for:</p>
+                    <ul class="list-disc list-inside space-y-3 text-lg mb-6">
+                        <li>Admirers of <strong class="text-amber-400">philosophical fiction</strong> and <strong class="text-amber-400">existentialist literature</strong>.</li>
+                        <li>Readers interested in themes of <strong class="text-amber-400">alienation, absurdity, and the human condition</strong>.</li>
+                        <li>Students of <strong class="text-amber-400">Modernist literature</strong> and early 20th-century European culture.</li>
+                        <li>Those who appreciate <strong class="text-amber-400">psychologically complex narratives</strong> that challenge conventional storytelling.</li>
+                        <li>Individuals intrigued by <strong class="text-amber-400">symbolism and allegorical tales</strong>.</li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold text-amber-400 mb-3">If you like "The Metamorphosis," you might also enjoy:</h3>
+                    <ul class="list-disc list-inside space-y-2 text-lg">
+                        <li>Franz Kafka's other works: "The Trial," "The Castle."</li>
+                        <li>Albert Camus: "The Stranger," "The Myth of Sisyphus."</li>
+                        <li>Jean-Paul Sartre: "Nausea."</li>
+                        <li>Fyodor Dostoevsky: "Notes from Underground," "Crime and Punishment."</li>
+                        <li>George Orwell: "Nineteen Eighty-Four" (for its themes of oppressive systems).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-8 text-center text-neutral-500 border-t border-color">
+        <p>© 2025 glizzy gobbler productions.</p>
+        <p>Based on Franz Kafka's "The Metamorphosis".</p>
+        <a href="#hero" class="mt-2 inline-block text-amber-500 hover:text-amber-400 transition-colors">Back to Top ↑</a>
+    </footer>
+
+</body>
+</html>
